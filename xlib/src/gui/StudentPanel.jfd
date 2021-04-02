@@ -1,0 +1,158 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "15.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp splitPane1::l:::x}"
+			"$verticalGroup": "par l {comp splitPane1::l:::x}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"title": "STUDENT PAGE"
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				"dividerSize": 1
+				"lastDividerLocation": 1
+				"oneTouchExpandable": true
+				"dividerLocation": 200
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp label10::l:::x, seq {par l {seq {space :::p, par l {comp label11:::p:161:p, comp label2::l:p::p, seq l {comp label4:::p::p, space :::p, comp label3:::p::p}, seq l {comp label1:::p::p, space u:::p, comp label7:::p::p}}}, seq l {space :p:20:p, comp label5:::p::p}, seq l {space :::p, comp label6:::p::p}}, space ::28:x}}"
+					"$verticalGroup": "par l {seq l {space :p:18:p, comp label5:::p::p, space :::p, par b {comp label1::b:p::p, comp label7::b:p::p}, space s:::p, par b {comp label4::b:p::p, comp label3::b:p::p}, space :p:20:p, comp label10:::p::p, space :::p, comp label2:::p::p, space s:::p, comp label6:::p::p, space :p:128:p, comp label11:::p::p, space ::122:x}}"
+				} ) {
+					name: "panel2"
+					"foreground": sfield java.awt.Color red
+					"background": sfield java.awt.Color green
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"foreground": sfield java.awt.Color red
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"foreground": sfield java.awt.Color red
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "welcome,"
+						"font": &Font0 new java.awt.Font( "Tahoma", 1, 12 )
+						"foreground": sfield java.awt.Color blue
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Last Login "
+						"font": #Font0
+						"foreground": sfield java.awt.Color blue
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"font": #Font0
+						"foreground": sfield java.awt.Color blue
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "User Id"
+						"font": #Font0
+						"foreground": sfield java.awt.Color blue
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Dashboard"
+						"font": #Font0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"font": #Font0
+						"foreground": sfield java.awt.Color blue
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"font": #Font0
+						"foreground": sfield java.awt.Color blue
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :0:229:x, comp label8:::p:180:p, space ::285:x}, seq t {par t {seq {space :::p, comp scrollPane1::::674:x}, seq {comp menuBar1:::p::p, space ::188:x, comp menuBar2:::p:215:p}}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :p:1:p, par l {comp menuBar1:::p::p, comp menuBar2:::::p}, space :p:14:p, comp label8:::p::p, space :::p, comp scrollPane1::::320:x, space :::p}}"
+				} ) {
+					name: "panel1"
+					"background": new java.awt.Color( 51, 51, 51, 255 )
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+						name: "menuBar1"
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu1"
+							"text": "books"
+							addEvent( new FormEvent( "javax.swing.event.MenuListener", "menuSelected", "menu1MenuSelected", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu2"
+							"text": "mybooks"
+							addEvent( new FormEvent( "javax.swing.event.MenuListener", "menuSelected", "menu2MenuSelected", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu3"
+							"text": "update Profile"
+							add( new FormComponent( "javax.swing.JMenuItem" ) {
+								name: "menuItem2"
+								"text": "update"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu5"
+							"text": "home"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menu5ActionPerformed", true ) )
+							add( new FormComponent( "javax.swing.JMenuItem" ) {
+								name: "menuItem3"
+								"text": "login page"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu4"
+							"text": "Help"
+							add( new FormComponent( "javax.swing.JMenuItem" ) {
+								name: "menuItem1"
+								"text": "about developer"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+							} )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+						name: "menuBar2"
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField1"
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu6"
+							"text": "search"
+							addEvent( new FormEvent( "javax.swing.event.MenuListener", "menuSelected", "menu6MenuSelected", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table1"
+							"rowSelectionAllowed": false
+							"selectionMode": 0
+							"autoCreateRowSorter": true
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "welcome,"
+						"font": new java.awt.Font( "Tahoma", 1, 16 )
+						"foreground": sfield java.awt.Color green
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 900, 430 )
+		} )
+	}
+}

@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "15.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 102, 102, 102, 255 )
+			"defaultCloseOperation": 3
+			"foreground": sfield java.awt.SystemColor textHighlight
+			"title": "LOGIN PAGE"
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space ::97:x, comp panel2:::::x, space ::107:x}}"
+				"$verticalGroup": "par l {seq l {space ::42:x, comp panel2:::::x, space ::83:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 51, 51, 51, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:27:p, par l:::p {comp label1::::76:x, comp label2::::76:x}, space u:::p, par l {comp username:::::x, comp password::::90:x}, space ::56:x}, seq {space ::74:x, par l {comp registerbtn::l:p::p, seq {space :p:18:p, comp label4:::p:37:p}, comp login::l:p:78:p, comp icon::l:p::p}, space ::62:x}, comp incorrect::l::259:x}"
+					"$verticalGroup": "par l {seq l {space ::19:x, comp icon:::::x, space ::22:x, par b {comp label1::b:::x, comp username::b::0:x}, space ::23:x, par b {comp label2::b:::x, comp password::b:::x}, space :::x, comp incorrect:::p:22:p, space :::p, comp login:::p:23:p, space :::x, comp label4:::::p, space s:::p, comp registerbtn:::p::p, space :p:26:p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 153, 153, 153, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "USERNAME"
+						"foreground": sfield java.awt.Color white
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "PASSWORD"
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+						"foreground": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "username"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "login"
+						"text": "LOGIN"
+						"background": new java.awt.Color( 0, 204, 51, 255 )
+						"foreground": sfield java.awt.Color white
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "icon"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/lock.png" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "incorrect"
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+						"foreground": sfield java.awt.Color red
+						"icon": new com.jformdesigner.model.SwingIcon( 2, "OptionPane.warningIcon" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "OR"
+						"foreground": sfield java.awt.Color green
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 3, false )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "registerbtn"
+						"text": "CREATE ACCOUNT"
+						"background": new java.awt.Color( 0, 255, 51, 255 )
+						"foreground": sfield java.awt.Color white
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerbtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "password"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 190, 0 )
+			"size": new java.awt.Dimension( 465, 445 )
+		} )
+	}
+}

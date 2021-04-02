@@ -1,0 +1,116 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "15.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp panel1:::::x, space :::p}}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"$sizePolicy": 1
+			"resizable": false
+			"title": "REGISTER"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space ::50:x, comp panel2:::::x, space ::56:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp panel2:::::x, space :p:135:p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 102, 102, 102, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:38:p, comp register:::::p, space s:::p, comp label6:::p::p, space u:::p, comp loginbtn:::p::p, space :0:34:x}, seq l {space :p:111:p, comp label5:::::x}, seq {space :::p, par l {seq l {comp label2:::p:100:p, space u:::p, comp email::::142:x}, seq l {par l {comp label4:::p::p, comp label3::l:p:100:p}, space u:::p, par l {comp confirm_password:::::x, comp password:::::x}}, seq l {par l {comp label1:::p:100:p, comp label7::l:p:100:p, comp label8::l:p:100:p}, space u:::p, par l {comp lnametxt:::::x, comp fnametxt::l:::x, comp username::t:::x}}}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::x, par b {comp label1::b::25:x, comp username::b:p::p}, space :::x, par b {comp fnametxt::b:p::p, comp label7::b:p:25:p}, space :::x, par b {comp lnametxt::b:p::p, comp label8::b:p:25:p}, space :::x, par b {comp label2::b:p:20:p, comp email::b:p::p}, space :::x, par b {comp password::b:p::p, comp label3::b:::p}, space u:::x, par l {comp confirm_password:::::p, comp label4:::p::p}, space :::x, comp label5:::p::p, space s:::p, par b {comp label6::b:p::p, comp register::b:::p, comp loginbtn::b:p::p}, space :::p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 153, 153, 153, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "username"
+						"font": &Font0 new java.awt.Font( "Tahoma", 1, 12 )
+						"foreground": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "email"
+						"foreground": sfield java.awt.Color white
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "password"
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+						"background": sfield java.awt.Color darkGray
+						"foreground": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "confirm password"
+						"font": new java.awt.Font( "Tahoma", 1, 11 )
+						"foreground": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "register"
+						"text": "register"
+						"foreground": sfield java.awt.Color white
+						"background": new java.awt.Color( 0, 204, 51, 255 )
+						"font": new java.awt.Font( "Tahoma", 1, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "username"
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "password"
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "confirm_password"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"foreground": sfield java.awt.Color red
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "OR"
+						"foreground": sfield java.awt.Color blue
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "loginbtn"
+						"text": "LOGIN"
+						"background": new java.awt.Color( 0, 0, 255, 255 )
+						"font": new java.awt.Font( "Tahoma", 1, 12 )
+						"foreground": sfield java.awt.Color white
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginbtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "email"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "fnametxt"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "lnametxt"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "first name"
+						"font": #Font0
+						"foreground": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "last name"
+						"font": #Font0
+						"foreground": sfield java.awt.Color white
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 245, 30 )
+			"size": new java.awt.Dimension( 400, 420 )
+		} )
+	}
+}

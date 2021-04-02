@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "15.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::27:x, par l {par l:t::p {comp ISBN3::l:::x, comp ISBN2::l:::x, comp TITLE::l:::x, comp ISBN::l:::x}, comp ISBN4::t:p:88:p}, par l {seq {space ::49:x, par l {comp label1::::208:x, par l:::p {comp textField2::::208:x, comp textField4::::208:x, comp textField3::l::208:x, comp textField1::l::208:x}}}, seq {space ::49:x, comp textField5:::p:208:p}}, space ::78:x}, seq t {space ::75:x, comp label2:::p:148:p, space :::p, comp comboBox1:::p:107:p, space :p:116:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {seq {comp label1:::::p, space :::p, comp textField5:::p::p}, comp ISBN4::t:p::p}, space u:::p, par b {comp textField1::b:p::p, comp ISBN::b:::p}, space s:::p, par t {comp TITLE:::p::p, comp textField2:::p::p}, par l {seq {space :p:9:p, comp textField3:::p::p}, seq {space s:::p, comp ISBN3:::p::p}}, space s:::p, par l {comp textField4:::p::p, comp ISBN2:::p::p}, space ::35:x, par b {comp comboBox1::b:p::p, comp label2::b:p::p}, space :::p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 102, 102, 102, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "update or delete book"
+				"font": &Font0 new java.awt.Font( "Tahoma", 1, 16 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBN"
+				"text": "ISBN"
+				"font": &Font1 new java.awt.Font( "Tahoma", 1, 15 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "TITLE"
+				"text": "TITLE"
+				"font": #Font1
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBN3"
+				"text": "AUTHOR"
+				"font": #Font1
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBN2"
+				"text": "PUBLISHER"
+				"font": #Font1
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "update"
+					addElement( "update" )
+					addElement( "delete" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "select action"
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBN4"
+				"text": "id"
+				"font": #Font1
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+				"editable": false
+				"enabled": false
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 245, 115 )
+			"size": new java.awt.Dimension( 450, 270 )
+		} )
+	}
+}

@@ -1,0 +1,65 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "15.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::27:x, par l:::p {comp ISBN3::l:::x, comp ISBN2::l:::x, comp TITLE::l:::x, comp ISBN::l:::x}, space ::49:x, par l {comp label1::::208:x, par l:::p {comp textField2::::208:x, comp textField4::::208:x, comp textField3::l::208:x, comp textField1::l::208:x}}, space ::78:x}, seq l {space :p:173:p, comp label2::::120:x, space ::157:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::::p, space :p:26:p, par b {comp textField1::b:p::p, comp ISBN::b:::p}, space :::p, comp label2:::p::p, space :::x, par t {comp TITLE::t:p::p, comp textField2::t:p::p}, par l {seq {space :p:9:p, comp textField3:::p::p}, seq {space s:::p, comp ISBN3:::p::p}}, space s:::p, par l {comp textField4:::p::p, comp ISBN2:::p::p}, space ::46:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 102, 102, 102, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ADD BOOK"
+				"font": new java.awt.Font( "Tahoma", 1, 16 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBN"
+				"text": "ISBN"
+				"font": &Font0 new java.awt.Font( "Tahoma", 1, 15 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "TITLE"
+				"text": "TITLE"
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBN3"
+				"text": "AUTHOR"
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ISBN2"
+				"text": "PUBLISHER"
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"background": new java.awt.Color( 102, 102, 102, 255 )
+				"foreground": sfield java.awt.Color red
+				"font": new java.awt.Font( "Tahoma", 1, 12 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 40, 10 )
+			"size": new java.awt.Dimension( 450, 245 )
+		} )
+	}
+}
